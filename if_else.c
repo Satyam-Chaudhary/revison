@@ -9,6 +9,12 @@ int main(){
     if(myNum < 0)   
         printf("Negative\n");
 
-    return 0;
+
+    // short hand if-else //--> Ternary operator
+    int age = 20;
+    ((age > 18) ? printf("Adult\n") : printf("Minor\n")); //condition true prints left one else prints right one
+
     
+    
+    return 0;
 }

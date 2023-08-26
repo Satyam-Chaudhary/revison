@@ -12,6 +12,8 @@ int main(){
     s1.reg = 229;
     s1.name = 'S';
 
+
+
     printf("reg no --> %d\n" , s1.reg);
     printf("name --> %c\n" , s1.name);
 }
