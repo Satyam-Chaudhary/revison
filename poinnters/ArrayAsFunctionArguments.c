@@ -6,7 +6,7 @@ int sumOfElements(int A[] , int size){ // int A[] same as int* A --> pointer to 
     int sum = 0;
     for(int i = 0 ; i < size ; i++){
         //sum += A[i];
-        sum += *(A + i); // work both ways
+        sum += *(A + i); // work both ways --> happens by derefrencing to orinal array elements and accesing or changing them
     }
     return sum;
 }
@@ -19,7 +19,7 @@ int sumOfElements(int A[] , int size){ // int A[] same as int* A --> pointer to 
 
 void Double(int* A , int size){         // int A[] or int* A -->  it's the same 
     for(int i = 0 ; i < size ; i ++){
-        A[i] = 2*A[i];
+        A[i] = 2*A[i]; // change is seen in the original array as no copy of array is passed in function --> only callby refrence
         // *(A) = 2* *(A); // same as above
     }
 }

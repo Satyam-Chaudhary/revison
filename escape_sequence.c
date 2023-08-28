@@ -5,6 +5,6 @@ int main(){
     printf("This creates a \t space \n");
     printf("This is to add \"quotes\" \n");
     printf("This to print the slash \\ \n");
-    
-    return 0;
+
+
 }
