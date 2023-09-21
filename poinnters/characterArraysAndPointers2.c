@@ -9,7 +9,7 @@ void print(char C[]){ // compiler sees this as char* C == char C[]
     printf("\n");
 }
 
-void print2(char* C){   // same as char C[]
+void print2(const char* C){   // same as char C[] // if const is used the string can't be changed
     
     while(*C != '\0'){  
         printf("%c " , *C);  // getting value at address C
@@ -19,7 +19,7 @@ void print2(char* C){   // same as char C[]
 }
 
 int main(){
-    char C[20] = "Hello"; // using string literals so null terminator is implicit
+    char C[] = "Hello"; // using string literals so null terminator is implicit
     print(C); // same as &C[0]
     print2(C);
     return 0;

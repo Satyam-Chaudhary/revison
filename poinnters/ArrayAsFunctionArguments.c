@@ -20,7 +20,7 @@ int sumOfElements(int A[] , int size){ // int A[] same as int* A --> pointer to 
 void Double(int* A , int size){         // int A[] or int* A -->  it's the same 
     for(int i = 0 ; i < size ; i ++){
         A[i] = 2*A[i]; // change is seen in the original array as no copy of array is passed in function --> only callby refrence
-        // *(A) = 2* *(A); // same as above
+        // *(A+i) = 2* *(A+i); // same as above
     }
 }
 int main(){
